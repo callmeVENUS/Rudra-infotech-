@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light cyan background */
+    line-height: 1.6;
+    color: #212121; /* Dark gray text for readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #00796b; /* Teal */
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    animation: slideDown 0.5s ease; /* Slide down animation for header */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 30px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+}
+
+header nav ul li a:hover {
+    color: #fffb22; /* Orange color on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(to bottom right, #0288d1, #00796b); /* Gradient from blue to teal */
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.hero h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease, pulse 2s infinite; /* Slide-in and pulse animation */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    animation: bounceIn 1s ease; /* Bounce-in animation for paragraph */
+}
+
+/* Section Styles */
+.services, .about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Scale and shadow effect on hover */
+    animation: fadeInUp 0.5s ease forwards; /* Fade-in up animation */
+}
+
+.services:hover, .about:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+h2 {
+    color: #004d40; /* Darker teal for headings */
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00796b; /* Teal */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease; /* Fade-in animation for footer */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: row; /* Ensure items are in a row */
+        justify-content: center; /* Center the items */
+    }
+
+    header nav ul li {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Responsive font size */
+    }
+
+    .services, .about {
+        padding: 40px 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.about-details h2 {
+    margin-top: 40px; /* Space above the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2rem; /* Increase font size for the heading */
+    color: #004d40; /* Darker teal for headings */
+}
+
+.about-details p {
+    padding: 20px; /* Add padding around the paragraph */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-details ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove padding */
+}
+
+.about-details li {
+    margin-bottom: 15px; /* Space between list items */
+}
+
+.mission-content {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 40px; /* Space below the section */
+}
+
+.mission-content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove padding */
+}
+
+.mission-content li {
+    margin-bottom: 25px; /* Space between list items */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+.mission-title {
+    font-weight: bold; /* Bold text for the titles */
+    color: #00796b; /* Teal color for the titles */
+    font-size: 1.2rem; /* Increase font size for the titles */
+    display: block; /* Make the title occupy a full line */
+    margin-bottom: 5px; /* Space below the title */
+}
+.values-content {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 40px; /* Space below the section */
+}
+
+.values-content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove padding */
+}
+
+.values-content li {
+    margin-bottom: 25px; /* Space between list items */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+.value-title {
+    font-weight: bold; /* Bold text for the titles */
+    color: #00796b; /* Teal color for the titles */
+    font-size: 1.2rem; /* Increase font size for the titles */
+    display: block; /* Make the title occupy a full line */
+    margin-bottom: 5px; /* Space below the title */
+}
+.hero {
+    background: linear-gradient(to bottom right, #0288d1, #00796b); /* Gradient from blue to teal */
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.hero-image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Space above the image */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+.hero-image {
+    max-width: 20%; /* Set maximum width to 20% to make the image very small */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above the image */
+    margin-bottom: 10px; /* Space below the image */
+    border-radius: 5px; /* Slightly rounded corners for a soft look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: block; /* Center the image if needed */
+    margin-left: auto; /* Center alignment */
+    margin-right: auto; /* Center alignment */
+}
